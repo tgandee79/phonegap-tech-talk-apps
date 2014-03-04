@@ -69,6 +69,9 @@ var app = {
         $("#albumImageBtn").on('click', function(event){
             AlbumPhoto(pictureSource.SAVEDPHOTOALBUM);
         });
+        $("#clearCanvas").on('click', function(event){
+            clearCanvas();
+        });
     }
 };
 
@@ -78,6 +81,7 @@ var addPhotoSuccess = function(data){
     }, 0);
     $('.app').hide();
     $('#imgInput').removeClass('hidden');
+    $('#canvasButtons').removeClass('hidden');
     renderImageFromData(data);
 };
 var addPhotoFail = function(msg){
@@ -86,10 +90,15 @@ var addPhotoFail = function(msg){
     }, 0);
 };
 var renderImageFromData = function(imgData){
-    ctx.putImageData(imgData,0,0,0,0,320,480);
+    ctx.putImageData(imgData,0,0,0,0,320,500);
 };
 
-
+var clearCanvas = function(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  $('.app').show();
+  $('#imgInput').addClass('hidden');
+  $('#canvasButtons').addClass('hidden');
+};
 
 // Called when a photo is successfully retrieved
 //
@@ -112,14 +121,14 @@ function onPhotoDataSuccess(imageData) {
 
     $('.app').hide();
     $('#imgInput').removeClass('hidden');
-    // renderImageFromData(imageData);
+    $('#canvasButtons').removeClass('hidden');
     addToCanvas(imageData);
 }
 function onPhotoURLSuccess(imageURI) {
 
     $('.app').hide();
     $('#imgInput').removeClass('hidden');
-    // renderImageFromData(imageData);
+    $('#canvasButtons').removeClass('hidden');
     addToCanvas(imageURI);
 }
 // Called when a photo is successfully retrieved

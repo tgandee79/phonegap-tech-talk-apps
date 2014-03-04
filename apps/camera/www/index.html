@@ -28,7 +28,7 @@
         <title>Camera App</title>
     </head>
     <body>
-        <div class="conatiner app">
+        <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
@@ -36,14 +36,13 @@
             </div>
             <div style="padding-top:20px;">
                 <button type="button" id="captureImageBtn" class="btn-block btn btn-xs btn-success">Capture Photo</button>
-                <button type="button" id="captureEditImageBtn" class="btn-block btn btn-xs btn-success">Capture Editable Photo</button>
-                <button type="button" id="libraryImageBtn" class="btn-block btn btn-xs btn-success">From Photo Library</button>
-                <button type="button" id="albumImageBtn" class="btn-block btn btn-xs btn-success">From Photo Album</button>
             </div>
         </div>
         <canvas id="imgInput" class="image-holder hidden" width="320" height="480"></canvas>
 
-
+        <div id="canvasButtons" class="container hidden">
+            <button type="button" id="clearCanvas" class="btn-block btn btn-xs btn-danger">Clear Canvas</button>
+        </div>
         <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
         <img style="display:none;" id="largeImage" src="" />
 

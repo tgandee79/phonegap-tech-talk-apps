@@ -117,11 +117,16 @@ h1 {
 
 .image-holder {
     position:absolute;
-    top:0;
+    top:60px;
     left:0;
-    border:5px solid yellow;
+    border:5px solid black;
+    width:99%;
     border-radius: 10px;
     overflow:hidden;
     z-index:100;
 }
 
+.container {
+    width: 96%;
+    padding: 20px 0 5px;
+}
