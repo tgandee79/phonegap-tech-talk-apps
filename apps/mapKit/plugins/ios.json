@@ -1,0 +1,1 @@
+{"prepare_queue":{"installed":[],"uninstalled":[]},"config_munge":{"framework":{"MapKit.framework":{"false":1}},"config.xml":{"/*":{"<feature name=\"MapKitView\"><param name=\"ios-package\" value=\"MapKitView\" /></feature>":1}}},"installed_plugins":{"com.contentecontent.cordova.plugins.mapKit":{"PACKAGE_NAME":"com.tgandee.mapKit"}},"dependent_plugins":{}}
