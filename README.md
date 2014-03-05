@@ -55,7 +55,6 @@ This app is an example that uses the MapKit Plugin (https://github.com/imhotep/M
 
     `
       phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git
-
     `
 
   - Add Plugin(s) with cordova cli:
