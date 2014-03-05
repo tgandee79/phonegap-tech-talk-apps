@@ -155,9 +155,9 @@ function onPhotoURISuccess(imageURI) {
 //
 function capturePhoto() {
   // Take picture using device camera and retrieve image as base64-encoded string
-  navigator.camera.getPicture(onPhotoURLSuccess, onFail, { quality: 10,
+  navigator.camera.getPicture(onPhotoURLSuccess, onFail, { quality: 50,
     destinationType: destinationType.FILE_URI, EncodingType: encodingType.PNG, targetWidth: 320,
-  targetHeight: 480});
+  targetHeight: 500});
 }
 
 // A button will call this function
